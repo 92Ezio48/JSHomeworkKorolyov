@@ -63,8 +63,8 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 .header{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
     height: 800px;
     background-image:  url(./img/header__background2.svg), url(./img/header__background3.svg), url(./img/header__background4.svg), url(./img/header__background5.svg), url(./img/header__background6.svg), url(./img/header__background7.svg), url(./img/header__background8.svg), url(./img/header__background9.svg), url(./img/header__background10.svg), url(./img/header__background11.svg), url(./img/header__background1.jpeg);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat ;
@@ -79,8 +79,8 @@ body{
     }
 }
 .about{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
     background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background3.svg), url(./img/about__background4.jpeg);  
     background-repeat: no-repeat, no-repeat, no-repeat, repeat;
     background-size: auto, auto, auto, contain;
@@ -97,12 +97,12 @@ body{
     }
 }
 .items{
+    overflow: hidden;
       display: grid;
       gap: 32px;
       padding-bottom: 50px;
       grid-template-columns: repeat(12, 1fr);
       &__card{
-        overflow: hidden;
         box-sizing: border-box;
         border-radius: 30px;
         background-color: white;
@@ -118,13 +118,15 @@ body{
             height: 551px;
         }
       }
+      &__card:hover{
+        opacity: 1;
+        position: relative;
+        transition: 1s;
+        transform: scale(1.2);
+      }
       &__img{
         width: 100%;
         height: 314px;
-      }
-      &__img:hover{
-        transition: 1s;
-        transform: scale(1.2);
       }
       &__description{
         display: flex;
@@ -133,4 +135,28 @@ body{
         padding: 32px;
         padding-bottom: 36px;
       }
+      &__number{
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        box-sizing: border-box;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        width: 107px;
+        height: 36px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 9px;
+      }
 }
+.card-link{
+    overflow: hidden;
+}
+.card-link:hover{
+    transform: scale(1);
+}
+html {
+    scroll-behavior: smooth;
+  }
