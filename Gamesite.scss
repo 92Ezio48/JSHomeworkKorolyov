@@ -29,6 +29,9 @@ h3{
     letter-spacing: 0px;
     text-align: left; 
 }
+.h3__mod{
+    font-weight: 700;
+}
 h4{
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -77,6 +80,9 @@ body{
         padding-top: 196px;
         padding-bottom: 48px;
     }
+    &__title_mobile{
+        display: none;
+    }
 }
 .about{
     padding-left: calc(50% - 600px);
@@ -86,6 +92,10 @@ body{
     background-size: auto, auto, auto, contain;
     background-position: top 54% right 100%, top 59% right 97%, top 10% right -15%, center;
     &__text{
+        color: rgb(255, 255, 255);
+    }
+    &__text_mobile{
+        display: none;
         color: rgb(255, 255, 255);
     }
     &__description{
@@ -150,9 +160,12 @@ body{
         justify-content: center;
         padding-top: 9px;
       }
-}
-.card-link{
-    overflow: hidden;
+      &__instruction{
+        display: none;
+      }
+      &__button{
+        display: none;
+      }
 }
 .card-link:hover{
     transform: scale(1);
@@ -160,3 +173,12 @@ body{
 html {
     scroll-behavior: smooth;
   }
+
+
+
+
+
+
+
+
+  @import './mobile.scss';

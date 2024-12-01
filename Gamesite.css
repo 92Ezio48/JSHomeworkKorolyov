@@ -34,6 +34,10 @@ h3 {
   text-align: left;
 }
 
+.h3__mod {
+  font-weight: 700;
+}
+
 h4 {
   color: rgb(32, 32, 39);
   font-size: 16px;
@@ -87,6 +91,9 @@ body {
   padding-top: 196px;
   padding-bottom: 48px;
 }
+.header__title_mobile {
+  display: none;
+}
 
 .about {
   padding-left: calc(50% - 600px);
@@ -97,6 +104,10 @@ body {
   background-position: top 54% right 100%, top 59% right 97%, top 10% right -15%, center;
 }
 .about__text {
+  color: rgb(255, 255, 255);
+}
+.about__text_mobile {
+  display: none;
   color: rgb(255, 255, 255);
 }
 .about__description {
@@ -162,9 +173,11 @@ body {
   justify-content: center;
   padding-top: 9px;
 }
-
-.card-link {
-  overflow: hidden;
+.items__instruction {
+  display: none;
+}
+.items__button {
+  display: none;
 }
 
 .card-link:hover {
@@ -173,4 +186,92 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 700px;
+    background-image: url(./img/header__background2.svg), url(./img/header__background3.svg), url(./img/header__background4.svg), url(./img/header__background5.svg), url(./img/header__background6.svg), url(./img/header__background1.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: top -80px right -37%, top 10% right 75%, top 15% left 12%, top 90% right 25%, top 95% right 10%, top 0% right 30%, top 40% right 20%, top 100% right 7%, top 70% right 12%, top 100% right 50px;
+    background-size: 50%, 6%, 10%, 5%, 10%, auto, cover;
+  }
+  .header__description {
+    padding-bottom: 36px;
+  }
+  .header__title_mobile {
+    display: block;
+  }
+  .header__button {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+  }
+  h3 {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .h3__mod {
+    font-weight: 700;
+  }
+  .about {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .about__description {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .about__text {
+    display: none;
+  }
+  .about__text_mobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  .items {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .items__number {
+    display: none;
+  }
+  .items__instruction {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .items__description {
+    gap: 16px;
+    padding: 29px;
+  }
+  .items__card {
+    height: 569px;
+  }
+  .items__card_big {
+    height: 647px;
+  }
+  .items__button {
+    display: block;
+  }
 }/*# sourceMappingURL=Gamesite.css.map */

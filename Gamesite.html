@@ -13,12 +13,14 @@
     <header class="header">   
         <div class="header__description">
             <h1>Добро пожаловать<br> на мой сайт мини-игр</h1>
-            <h3>Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай «Поехали!» и приступай.</h3>
+            <h3 class="header__title_mobile">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="h3__mod">«Поехали!»</span> и <span class="h3__mod">приступай.</span></h3>
+            <h3>Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <span class="h3__mod">«Поехали!»</span> и <span class="h3__mod">приступай.</span></h3>
         </div>
-        <button class="header__begin" href="#">Поехали!</button>
+        <a class="header__button" href="#about-games"><button class="header__begin" href="#">Поехали!</button></a>
     </header>
-    <section class="about">
+    <section class="about" id="about-games">
         <div class="about__description">
+            <h1 class="about__text_mobile">Мини-игры</h1>
             <h1 class="about__text">Об играх</h1>
             <h3 class="about__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h3>
         </div>
@@ -29,6 +31,8 @@
                     <div class="items__description">
                         <p class="items__number">Игра № 1</p>
                         <h2>Угадай число</h2>  
+                        <p class="items__instruction">Попробуй угадать случайное число от 1 до 100.</p>
+                        <button class="items__button" href="#">Играть!</button>
                     </div>
                 </article>
             </a>
@@ -38,6 +42,8 @@
                     <div class="items__description">
                         <p class="items__number">Игра № 2</p>
                         <h2>Простая арифметика</h2>
+                        <p class="items__instruction">Попробуй решить простые арифметические задачи.</p>
+                        <button class="items__button" href="#">Играть!</button>
                     </div>  
                 </article>
             </a>
@@ -47,6 +53,8 @@
                         <div class="items__description">
                             <p class="items__number">Игра № 3</p>
                             <h2>Переверни текст</h2>
+                            <p class="items__instruction">Попробуй ввести текст, который будет перевернут.</p>
+                            <button class="items__button" href="#">Играть!</button>
                         </div>
                 </article>
             </a>
@@ -56,6 +64,8 @@
                         <div class="items__description">
                             <p class="items__number">Игра № 4</p>
                             <h2>Камень, ножницы, бумага</h2>
+                            <p class="items__instruction">Отвечай на вопросы викторины c вариантами ответов.</p>
+                            <button class="items__button" href="#">Играть!</button>
                         </div>
                 </article>
             </a>
@@ -65,6 +75,8 @@
                         <div class="items__description">
                             <p class="items__number">Игра № 5</p>
                             <h2>Простая викторина</h2>
+                            <p class="items__instruction">Сыграй в популярную игру против компьютера.</p>
+                            <button class="items__button" href="#">Играть!</button>
                         </div>
                 </article>
             </a>
@@ -74,6 +86,8 @@
                         <div class="items__description"> 
                             <p class="items__number">Игра № 6</p>
                             <h2>Генератор случайных цветов</h2>
+                            <p class="items__instruction">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                            <button class="items__button" href="#">Играть!</button>
                         </div>
                 </article>
             </a>
