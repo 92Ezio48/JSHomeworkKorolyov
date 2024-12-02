@@ -5,3 +5,6 @@ alert(a);
 
 const iphoneyear = 2007;
 alert(iphoneyear);
+
+const jscreator = "Brendan_Eich";
+alert(jscreator);
