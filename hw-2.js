@@ -19,3 +19,7 @@ alert(b/c);
 const d = 2;
 const result = d ** 5;
 alert(result);
+
+const a1 = 9;
+const b1 = 2;
+alert(a1 % b1);
