@@ -23,3 +23,12 @@ alert(result);
 const a1 = 9;
 const b1 = 2;
 alert(a1 % b1);
+
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num ++;
+num --;
+alert(num);
