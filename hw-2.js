@@ -8,3 +8,10 @@ alert(iphoneyear);
 
 const jscreator = "Brendan_Eich";
 alert(jscreator);
+
+const b = 10;
+const c = 2;
+alert(b+c);
+alert(b-c);
+alert(b*c);
+alert(b/c);
