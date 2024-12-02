@@ -15,3 +15,7 @@ alert(b+c);
 alert(b-c);
 alert(b*c);
 alert(b/c);
+
+const d = 2;
+const result = d ** 5;
+alert(result);
