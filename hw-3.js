@@ -5,3 +5,11 @@ if (entering.toLowerCase() === password) {
 } else {
     alert('Пароль введен неправильно');
 }
+
+
+let c = prompt("Введите число");
+if (c > 0 && c < 10) {
+    alert('Верно');
+} else {
+    alert('Неверно');
+}
