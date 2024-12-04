@@ -170,6 +170,85 @@ body{
 .card-link:hover{
     transform: scale(1);
 }
+.mini{
+    height: 3500px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg),  url(./img/about__background4.jpeg); 
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: auto, auto,  contain;
+    background-position: top 54% right 100%, top 59% right 97%,  center;
+    &__text{
+        color: rgb(255, 255, 255);
+        padding-bottom: 72px;
+    }
+    &__items{
+        display: grid;
+        gap: 32px;
+        padding-bottom: 50px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &__card{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+        border-radius: 55px;
+        background-color: white;
+        grid-column: span 12;
+        height: 500px;
+        width: 100%;
+        &_reverse{
+            flex-direction: row;
+        }
+    }
+    &__card:hover{
+        opacity: 1;
+        position: relative;
+        transition: 1s;
+        transform: scale(1.1);
+      }
+    &__img{
+        height: 500px;
+    }
+    &__description{
+        padding-top: 48px;
+        padding-left: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        width: 50%;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__instruction{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #000;
+    }
+}
+.footer{
+    height: 150px;
+    background-image: url(./img/footer_bacground.jpeg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__title{
+
+    }
+}
 html {
     scroll-behavior: smooth;
   }
