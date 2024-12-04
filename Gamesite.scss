@@ -174,10 +174,10 @@ body{
     height: 3500px;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
-    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg),  url(./img/about__background4.jpeg); 
-    background-repeat: no-repeat, no-repeat, repeat;
-    background-size: auto, auto,  contain;
-    background-position: top 54% right 100%, top 59% right 97%,  center;
+    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background1.svg), url(./img/about__background2.svg),  url(./img/about__background4.jpeg); 
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-size: auto, auto, auto, auto,  contain;
+    background-position: top 2% right 13%, top 3% right 10%,  top 98% right 13%, top 97% right 8%,  center;
     &__text{
         color: rgb(255, 255, 255);
         padding-bottom: 72px;
