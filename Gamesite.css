@@ -34,10 +34,6 @@ h3 {
   text-align: left;
 }
 
-.h3__mod {
-  font-weight: 700;
-}
-
 h4 {
   color: rgb(32, 32, 39);
   font-size: 16px;
@@ -91,8 +87,11 @@ body {
   padding-top: 196px;
   padding-bottom: 48px;
 }
-.header__title_mobile {
+.header__mobile {
   display: none;
+}
+.header__bold-words {
+  font-weight: 700;
 }
 
 .about {
@@ -145,7 +144,7 @@ body {
   opacity: 1;
   position: relative;
   transition: 1s;
-  transform: scale(1.2);
+  transform: scale(1.03);
 }
 .items__img {
   width: 100%;
@@ -223,7 +222,7 @@ body {
   opacity: 1;
   position: relative;
   transition: 1s;
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .mini__img {
   height: 500px;
@@ -261,6 +260,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -278,7 +278,7 @@ html {
   .header__description {
     padding-bottom: 36px;
   }
-  .header__title_mobile {
+  .header__mobile {
     display: block;
   }
   .header__button {

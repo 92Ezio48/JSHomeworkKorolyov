@@ -29,9 +29,7 @@ h3{
     letter-spacing: 0px;
     text-align: left; 
 }
-.h3__mod{
-    font-weight: 700;
-}
+
 h4{
     color: rgb(32, 32, 39);
     font-size: 16px;
@@ -80,8 +78,11 @@ body{
         padding-top: 196px;
         padding-bottom: 48px;
     }
-    &__title_mobile{
+    &__mobile{
         display: none;
+    }
+    &__bold-words{
+        font-weight: 700;
     }
 }
 .about{
@@ -132,7 +133,7 @@ body{
         opacity: 1;
         position: relative;
         transition: 1s;
-        transform: scale(1.2);
+        transform: scale(1.03);
       }
       &__img{
         width: 100%;
@@ -208,7 +209,7 @@ body{
         opacity: 1;
         position: relative;
         transition: 1s;
-        transform: scale(1.1);
+        transform: scale(1.01);
       }
     &__img{
         height: 500px;
@@ -245,9 +246,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    &__title{
-
-    }
 }
 html {
     scroll-behavior: smooth;
