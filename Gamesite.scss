@@ -129,7 +129,23 @@ body{
             height: 551px;
         }
       }
-      &__card:hover{
+      &__card-container{
+        box-sizing: border-box;
+        border-radius: 30px;
+        background-color: white;
+        grid-column: span 4;
+        height: 473px;
+        &_medium{
+            height: 512px;
+        }
+        &_big{
+            height: 551px;
+        }
+        &_5{
+            height: 551px;
+        }
+      }
+      &__card-container:hover{
         opacity: 1;
         position: relative;
         transition: 1s;
@@ -205,6 +221,37 @@ body{
             flex-direction: row;
         }
     }
+    &__card-container{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+        border-radius: 55px;
+        background-color: white;
+        grid-column: span 12;
+        height: 500px;
+        width: 100%;
+        &_medium{
+            height: 512px;
+        }
+        &_big{
+            height: 500px;
+        }
+        &_5{
+            height: 500px;
+        }
+        &_reverse{
+            flex-direction: row;
+        }
+      }
+      &__card-container:hover{
+        opacity: 1;
+        position: relative;
+        transition: 1s;
+        transform: scale(1.03);
+      }
     &__card:hover{
         opacity: 1;
         position: relative;
