@@ -25,3 +25,15 @@ const obj = {
  for (let key in obj) {
     console.log(`${key}: ${obj[key]} $`);
  }
+
+
+ let n = 1000;
+ let actions = 0;
+ while (n > 50) {
+    n /= 2;
+    actions++;
+ }  
+ console.log(n);
+ console.log(actions);
+ 
+ 
