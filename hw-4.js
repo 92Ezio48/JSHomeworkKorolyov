@@ -11,5 +11,9 @@ while (a<=5) {
     a++;
 }
 
-
+let b = 7;
+while (b<=22) {
+    console.log(b);
+    b++;
+}
 
