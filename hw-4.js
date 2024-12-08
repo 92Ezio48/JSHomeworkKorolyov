@@ -35,5 +35,13 @@ const obj = {
  }  
  console.log(n);
  console.log(actions);
+
+
+
+ let  firstfriday = +prompt("Введите число первой пятницы месяца");
+ while (firstfriday <= 31) {
+    alert('Сегодня пятница, ' + firstfriday + '-е число. Необходимо подготовить отчет.');
+    firstfriday += 7;
+ }
  
  
