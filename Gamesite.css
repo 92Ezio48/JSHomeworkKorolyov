@@ -323,6 +323,7 @@ html {
     background-size: 50%, 6%, 10%, 5%, 10%, auto, cover;
   }
   .header__description {
+    padding-top: 148px;
     padding-bottom: 36px;
   }
   .header__mobile {
@@ -333,6 +334,8 @@ html {
     justify-content: center;
   }
   button {
+    width: 285px;
+    height: 55px;
     font-size: 16px;
     font-weight: 600;
     line-height: 141.69%;
@@ -354,6 +357,7 @@ html {
     font-weight: 700;
   }
   .about {
+    display: none;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -397,5 +401,102 @@ html {
   }
   .items__button {
     display: block;
+  }
+  .mini {
+    padding-top: 48px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url(./img/about__background4.jpeg);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  .mini__description {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .mini__text {
+    text-align: left;
+    grid-column: span 4;
+    display: block;
+    padding-bottom: 48px;
+  }
+  .mini__text_mobile {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  .mini__number {
+    display: none;
+  }
+  .mini__instruction {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .mini__description {
+    width: 284.93px;
+    gap: 16px;
+    padding: 29px;
+    padding-bottom: 32px;
+  }
+  .mini__card {
+    border-radius: 27px;
+    height: 528.63px;
+    margin-bottom: 24px;
+  }
+  .mini__card_big {
+    height: 606.63px;
+  }
+  .mini__card_medium {
+    height: 567.63px;
+  }
+  .mini__card_5 {
+    height: 567.63px;
+  }
+  .mini__button {
+    margin-top: 16px;
+    display: block;
+  }
+  .mini__items {
+    display: block;
+    grid-column: span 4;
+    padding-bottom: 24px;
+  }
+  .mini__img {
+    width: 100%;
+    height: 284.93px;
+  }
+  .mini__card-container {
+    border-radius: 27px;
+    flex-direction: column;
+    height: 528.63px;
+    align-items: center;
+    justify-content: normal;
+  }
+  .mini__card-container_big {
+    height: 606.63px;
+  }
+  .mini__card-container_medium {
+    height: 567.63px;
+  }
+  .mini__card-container_5 {
+    height: 567.63px;
+  }
+  .mini__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .footer__title {
+    display: block;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=Gamesite.css.map */
