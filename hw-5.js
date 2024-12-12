@@ -21,4 +21,9 @@ console.log(parity(2));
 console.log(parity(3));
 
 
-
+function square(NumberEntered) {
+    let squareNumber = NumberEntered * NumberEntered;
+		return squareNumber;
+}
+console.log(square(8));
+console.log(square(12));
