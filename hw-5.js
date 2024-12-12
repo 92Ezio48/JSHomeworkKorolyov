@@ -57,3 +57,13 @@ console.log(correct(1, 4));
 
 
 
+function  NumberOrNot() {
+    let baseNumber = prompt("Введите число");
+    if (isNaN(baseNumber) == false) {
+        let cubeNumber = baseNumber ** 3;
+        return  console.log(baseNumber + ' в кубе равняется ' + cubeNumber);
+    } else {
+        console.log('Переданный параметр не является числом');
+    }
+}
+console.log(NumberOrNot());
