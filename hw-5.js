@@ -67,3 +67,33 @@ function  NumberOrNot() {
     }
 }
 console.log(NumberOrNot());
+
+
+
+
+
+
+const circle1 = {
+    radius: 5,
+    getArea() {
+        console.log((this.radius ** 2) * Math.PI);
+    },
+    getPerimeter() {
+        console.log(this.radius * 2 * Math.PI);
+    }
+ }
+
+ const circle2 = {
+    radius: 10,
+    getArea() {
+    return console.log((this.radius ** 2) * Math.PI);
+    },
+    getPerimeter() {
+        console.log(this.radius * 2 * Math.PI);
+    }
+ }
+
+ circle1.getArea();
+ circle2.getArea();
+ circle1.getPerimeter();
+ circle2.getPerimeter();
