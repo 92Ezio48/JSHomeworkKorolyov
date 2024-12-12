@@ -42,3 +42,18 @@ function howOld() {
 }
 console.log(howOld());
 
+
+
+function  correct(c, d) {
+    if (isNaN(c) == false && isNaN(d) == false) {
+        return  console.log(c * d);
+    } else {
+        console.log('Одно или оба значения не являются числом');
+    }
+}
+console.log(correct(1, 'h'));
+console.log(correct(1, 4));
+
+
+
+
