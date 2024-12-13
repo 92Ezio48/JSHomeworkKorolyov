@@ -407,7 +407,6 @@ html {
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
     padding-left: 16px;
     padding-right: 16px;
     background-image: url(./img/about__background4.jpeg);
@@ -433,6 +432,7 @@ html {
     display: none;
   }
   .mini__instruction {
+    width: 90%;
     display: block;
     color: rgb(0, 0, 0);
     font-size: 16px;

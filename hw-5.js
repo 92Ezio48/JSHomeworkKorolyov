@@ -72,25 +72,24 @@ console.log(NumberOrNot());
 
 
 
-
+function getArea() {
+    let Area = ((this.radius ** 2) * Math.PI);
+    return Area
+}
+function getPerimeter() {
+    let Perimeter = (this.radius * 2 * Math.PI);
+    return Perimeter
+}
 const circle1 = {
     radius: 5,
-    getArea() {
-        console.log((this.radius ** 2) * Math.PI);
-    },
-    getPerimeter() {
-        console.log(this.radius * 2 * Math.PI);
-    }
+    getPerimeter,
+    getArea
  }
 
  const circle2 = {
     radius: 10,
-    getArea() {
-    return console.log((this.radius ** 2) * Math.PI);
-    },
-    getPerimeter() {
-        console.log(this.radius * 2 * Math.PI);
-    }
+    getPerimeter,
+    getArea
  }
 
  circle1.getArea();
