@@ -59,3 +59,12 @@ const ninthSet = [
  ];
  const flattenedArray = ninthSet.flat();
  console.log(flattenedArray);
+
+
+ const tenthSet = [2, 2, 3, 3, 4, 4, 5, 5, 9, 9];
+ for (let i = 0; i < tenthSet.length; i++) {
+    let element1 = tenthSet[i];
+    let element2 = tenthSet[i++];
+    let sum = element1 + element2;
+    console.log(sum);
+ }
