@@ -42,3 +42,12 @@ if (userAnswer == seventhSet[0] || userAnswer == seventhSet[1] || userAnswer == 
 } else {
     alert('Не угадал');
 }
+
+
+
+let eigthSet = 'abcdef';
+let eigthSetMass = eigthSet.split('');
+eigthSetMass = eigthSetMass.reverse();
+eigthSetMass = eigthSetMass.toString();
+const withoutCommas = eigthSetMass.replaceAll(',', '');
+console.log(withoutCommas);
