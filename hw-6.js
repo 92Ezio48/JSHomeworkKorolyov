@@ -21,3 +21,9 @@ const forthSet = [
     [1, 1, 1]
  ];
  console.log(forthSet);
+
+
+let fifthSet = [1, 1, 1];
+addSet = [2, 2, 2];
+fifthSet = fifthSet.concat(addSet);
+console.log(fifthSet);
