@@ -14,3 +14,10 @@ const thirdSet = [1, 3, 5, 10, 20];
 const thirdGoal = thirdSet.join(' ');
 console.log(thirdGoal);
 
+
+const forthSet = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]
+ ];
+ console.log(forthSet);
