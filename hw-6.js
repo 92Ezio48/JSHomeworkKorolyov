@@ -35,4 +35,10 @@ const sixthSetFiltered = sixthSetSort.filter(goal => goal >= 0);
 console.log(sixthSetFiltered);
 
 
-
+const seventhSet = [9, 8, 7, 6, 5];
+const userAnswer = prompt("Угадайте число от 1 до 10!");
+if (userAnswer == seventhSet[0] || userAnswer == seventhSet[1] || userAnswer == seventhSet[2] || userAnswer == seventhSet[3] || userAnswer == seventhSet[4]) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
