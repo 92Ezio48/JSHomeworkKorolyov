@@ -68,3 +68,8 @@ const ninthSet = [
     let sum = element1 + element2;
     console.log(sum);
  }
+
+
+ const eleventhSet = [2, 3, 4, 5, 6, 7, 8, 9];
+ const eleventhSetSquare = eleventhSet.map(item => item * item);
+ console.log(eleventhSetSquare);
