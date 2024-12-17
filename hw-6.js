@@ -27,3 +27,12 @@ let fifthSet = [1, 1, 1];
 addSet = [2, 2, 2];
 fifthSet = fifthSet.concat(addSet);
 console.log(fifthSet);
+
+
+const sixthSet = [9, 8, 7, 'a', 6, 5];
+sixthSetSort = sixthSet.sort();
+const sixthSetFiltered = sixthSetSort.filter(goal => goal >= 0);
+console.log(sixthSetFiltered);
+
+
+
