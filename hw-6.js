@@ -73,3 +73,9 @@ const ninthSet = [
  const eleventhSet = [2, 3, 4, 5, 6, 7, 8, 9];
  const eleventhSetSquare = eleventhSet.map(item => item * item);
  console.log(eleventhSetSquare);
+
+
+
+ const twelvethSet = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'];
+ console.log(twelvethSet.map(word => word.length));
+ 
