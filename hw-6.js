@@ -51,3 +51,11 @@ eigthSetMass = eigthSetMass.reverse();
 eigthSetMass = eigthSetMass.toString();
 const withoutCommas = eigthSetMass.replaceAll(',', '');
 console.log(withoutCommas);
+
+
+const ninthSet = [
+    [1, 2, 3],
+    [4, 5, 6]
+ ];
+ const flattenedArray = ninthSet.flat();
+ console.log(flattenedArray);
