@@ -79,3 +79,8 @@ const ninthSet = [
  const twelvethSet = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur'];
  console.log(twelvethSet.map(word => word.length));
  
+
+
+ const thirteenthSet = [2, -3, 4, -5, 6, -7, 8, 9];
+ const thirteenthFiltered = thirteenthSet.filter(goal => goal <= 0);
+ console.log(thirteenthFiltered);
