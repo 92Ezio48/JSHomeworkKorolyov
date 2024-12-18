@@ -84,3 +84,16 @@ const ninthSet = [
  const thirteenthSet = [2, -3, 4, -5, 6, -7, 8, 9];
  const thirteenthFiltered = thirteenthSet.filter(goal => goal <= 0);
  console.log(thirteenthFiltered);
+
+
+
+ let max = 10;
+ let min = 0;
+ const fourteenthMass = [Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min];
+ console.log(fourteenthMass);
+ const fourteenthMassFiltered = fourteenthMass.filter(goal => goal % 2 == 0);
+ console.log(fourteenthMassFiltered);
+
+
+
+ 
