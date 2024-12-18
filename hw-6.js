@@ -96,4 +96,13 @@ const ninthSet = [
 
 
 
- 
+ let max15 = 10;
+ let min15 = 0;
+ const fifteenthMass = [Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min];
+ console.log(fifteenthMass);
+ let sum = 0;
+ for (let i = 0; i < fifteenthMass.length; i++) {
+    sum = sum + fifteenthMass[i];
+ }
+ const srАrithmetic =  sum / fifteenthMass.length;
+ console.log(srАrithmetic);
