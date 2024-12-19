@@ -1,8 +1,9 @@
 const firstSet = [1, 5, 4, 10, 0, 3];
-for (let i = 0; i < firstSet.length; i++) {
-    if (firstSet[i] == 0) break;
-    console.log(firstSet[i]);
+for (let i = -1; i < firstSet.length; i++) {
+    if (firstSet[i] == 10) break;
+    console.log(firstSet[i+1]);
  }
+
 
 
 const secondSet = [1, 5, 4, 10, 0, 3];
@@ -15,29 +16,39 @@ const thirdGoal = thirdSet.join(' ');
 console.log(thirdGoal);
 
 
-const forthSet = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
- ];
+
+
+const forthSet = [];
+const forthSetbase = [];
+for (let index = 0; index <= 2; index++) {
+    for (let i = 0; i <= 2; i++) {
+    forthSetbase.push(1);
+  }
+  forthSet.push(forthSetbase);
+  forthSetbase.length = 3;
+}
  console.log(forthSet);
 
 
+
+
 let fifthSet = [1, 1, 1];
-addSet = [2, 2, 2];
-fifthSet = fifthSet.concat(addSet);
+for (let i = 0; i <= 2; i++) {
+    fifthSet.push(2);
+  }
 console.log(fifthSet);
 
 
 const sixthSet = [9, 8, 7, 'a', 6, 5];
 sixthSetSort = sixthSet.sort();
-const sixthSetFiltered = sixthSetSort.filter(goal => goal >= 0);
-console.log(sixthSetFiltered);
+sixthSetSort = sixthSet.pop();
+console.log(sixthSet);
 
 
 const seventhSet = [9, 8, 7, 6, 5];
-const userAnswer = prompt("Угадайте число от 1 до 10!");
-if (userAnswer == seventhSet[0] || userAnswer == seventhSet[1] || userAnswer == seventhSet[2] || userAnswer == seventhSet[3] || userAnswer == seventhSet[4]) {
+const userAnswer = +prompt("Угадайте число от 1 до 10!");
+let check = seventhSet.includes(userAnswer);
+if (check == true) {
     alert('Угадал');
 } else {
     alert('Не угадал');
@@ -45,12 +56,15 @@ if (userAnswer == seventhSet[0] || userAnswer == seventhSet[1] || userAnswer == 
 
 
 
+
 let eigthSet = 'abcdef';
 let eigthSetMass = eigthSet.split('');
 eigthSetMass = eigthSetMass.reverse();
-eigthSetMass = eigthSetMass.toString();
-const withoutCommas = eigthSetMass.replaceAll(',', '');
-console.log(withoutCommas);
+eigthSetMass = eigthSetMass.join();
+eigthSetMass = eigthSetMass.replaceAll(',', '');
+console.log(eigthSetMass);
+
+
 
 
 const ninthSet = [
@@ -89,7 +103,10 @@ const ninthSet = [
 
  let max = 10;
  let min = 0;
- const fourteenthMass = [Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min];
+ const fourteenthMass = [];
+ for (let i = 0; i <= 9; i++) {
+    fourteenthMass.push(Math.floor(Math.random() * (max - min + 1)) + min);
+  }
  console.log(fourteenthMass);
  const fourteenthMassFiltered = fourteenthMass.filter(goal => goal % 2 == 0);
  console.log(fourteenthMassFiltered);
@@ -98,7 +115,10 @@ const ninthSet = [
 
  let max15 = 10;
  let min15 = 0;
- const fifteenthMass = [Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min, Math.floor(Math.random() * (max - min + 1)) + min];
+ const fifteenthMass = [];
+ for (let i = 0; i <= 5; i++) {
+    fifteenthMass.push(Math.floor(Math.random() * (max - min + 1)) + min);
+  }
  console.log(fifteenthMass);
  let sum = 0;
  for (let i = 0; i < fifteenthMass.length; i++) {
