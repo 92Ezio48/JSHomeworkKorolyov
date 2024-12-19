@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Gamesite.css">
+</head>
+<body>
+    <header class="header">   
+        <div class="header__description">
+            <h1>Добро пожаловать<br> на мой сайт мини-игр</h1>
+            <h3 class="header__mobile">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="header__bold-words">«Поехали!»</span> и <span class="header__bold-words">приступай.</span></h3>
+            <h3>Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <span class="header__bold-words">«Поехали!»</span> и <span class="header__bold-words">приступай.</span></h3>
+        </div>
+        <a class="header__button" href="#about-games"><button class="header__begin" href="#">Поехали!</button></a>
+    </header>
+    <section class="about" id="about-games">
+        <div class="about__description">
+            <h1 class="about__text about__text_mobile">Мини-игры</h1>
+            <h1 class="about__text">Об играх</h1>
+            <h3 class="about__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h3>
+        </div>
+        <div class="about__items items">
+            <a class="items__card card-link " href="#game-1">
+                <article class="items__card-container">
+                    <img src="img/card_1.png" class="items__img" alt="card_1">
+                    <div class="items__description">
+                        <p class="items__number">Игра № 1</p>
+                        <h2>Угадай число</h2>  
+                        <p class="items__instruction">Попробуй угадать случайное число от 1 до 100.</p>
+                        <button class="items__button" href="#">Играть!</button>
+                    </div>
+                </article>
+            </a>
+            <a class="items__card card-link items__card_medium" href="#game-2">
+                <article class="items__card-container items__card-container_medium">
+                    <img src="img/card_2.png" class="items__img" alt="card_1">
+                    <div class="items__description">
+                        <p class="items__number">Игра № 2</p>
+                        <h2>Простая арифметика</h2>
+                        <p class="items__instruction">Попробуй решить простые арифметические задачи.</p>
+                        <button class="items__button" href="#">Играть!</button>
+                    </div>  
+                </article>
+            </a>
+            <a class="items__card card-link" href="#game-3">
+                <article class="items__card-container">
+                        <img src="img/card_3.png" class="items__img" alt="card_1">
+                        <div class="items__description">
+                            <p class="items__number">Игра № 3</p>
+                            <h2>Переверни текст</h2>
+                            <p class="items__instruction">Попробуй ввести текст, который будет перевернут.</p>
+                            <button class="items__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+            <a class="items__card card-link items__card_big" href="#game-4">
+                <article class="items__card-container items__card-container_big">
+                        <img src="img/card_4.png" class="items__img" alt="card_1">
+                        <div class="items__description">
+                            <p class="items__number">Игра № 4</p>
+                            <h2>Камень, ножницы, бумага</h2>
+                            <p class="items__instruction">Отвечай на вопросы викторины c вариантами ответов.</p>
+                            <button class="items__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+            <a class="items__card card-link items__card_5" href="#game-5">
+                <article class="items__card-container items__card-container_5">
+                        <img src="img/card_5.png" class="items__img" alt="card_1">
+                        <div class="items__description">
+                            <p class="items__number">Игра № 5</p>
+                            <h2>Простая викторина</h2>
+                            <p class="items__instruction">Сыграй в популярную игру против компьютера.</p>
+                            <button class="items__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+            <a class="items__card card-link items__card_big" href="#game-6">
+                <article class="items__card-container items__card-container_big">
+                        <img src="img/card_6.png" class="items__img" alt="card_1">
+                        <div class="items__description"> 
+                            <p class="items__number">Игра № 6</p>
+                            <h2>Генератор случайных цветов</h2>
+                            <p class="items__instruction">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                            <button class="items__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+        </div>
+    </section>
+    <section class="mini">
+        <h1 class="mini__text">Мини-игры</h1>
+        <div class="mini__items">
+            <a class="mini__card card-link" href="#" id="game-1">
+                <article class="mini__card-container">
+                    <img src="img/card_1.png" class="mini__img" alt="card_1">
+                    <div class="mini__description">
+                        <h2 class="mini__title">Угадай число</h2>  
+                        <p class="mini__instruction">Попробуй угадать случайное <br> число от 1 до 100.</p>
+                        <button onclick="FirstGame()" class="mini__button" href="#">Играть!</button>
+                    </div>
+                </article>
+            </a>
+            <a class="mini__card mini__card_reverse card-link mini__card_medium" href="#" id="game-2">
+                <article class="mini__card-container mini__card-container_reverse mini__card-container_medium">
+                    <img src="img/card_2.png" class="mini__img" alt="card_1">
+                    <div class="mini__description">
+                        <h2 class="mini__title">Простая арифметика</h2>
+                        <p class="mini__instruction">Попробуй решить простые арифметические задачи.</p>
+                        <button class="mini__button" href="#">Играть!</button>
+                    </div>  
+                </article>
+            </a>
+            <a class="mini__card card-link mini__card_medium" href="#" id="game-3">
+                <article class="mini__card-container mini__card-container_medium">
+                        <img src="img/card_3.png" class="mini__img" alt="card_1">
+                        <div class="mini__description">
+                            <h2 class="mini__title">Переверни текст</h2>
+                            <p class="mini__instruction">Попробуй ввести текст, который будет перевернут.</p>
+                            <button class="mini__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+            <a class="mini__card card-link " href="#" id="game-5">
+                <article class="mini__card-container ">
+                        <img src="img/card_5.png" class="mini__img" alt="card_1">
+                        <div class="mini__description">
+                            <h2 class="mini__title">Викторина</h2>
+                            <p class="mini__instruction">Сыграй в популярную игру против компьютера.</p>
+                            <button class="mini__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+            <a class="mini__card mini__card_reverse card-link mini__card_big" href="#" id="game-4">
+                <article class="mini__card-container mini__card-container_reverse mini__card-container_big">
+                        <img src="img/card_4.png" class="mini__img" alt="card_1">
+                        <div class="mini__description">
+                            <h2 class="mini__title">Камень, ножницы, бумага</h2>
+                            <p class="mini__instruction">Отвечай на вопросы викторины c вариантами ответов.</p>
+                            <button class="mini__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>  
+            <a class="mini__card mini__card_reverse card-link mini__card_big" href="#" id="game-6">
+                <article class="mini__card-container mini__card-container_reverse mini__card-container_big">
+                        <img src="img/card_6.png" class="mini__img" alt="card_1">
+                        <div class="mini__description"> 
+                            <h2 class="mini__title">Генератор случайных цветов</h2>
+                            <p class="mini__instruction">Игра, в которой при клике на кнопку фон страницы  меняется на случайный.</p>
+                            <button class="mini__button" href="#">Играть!</button>
+                        </div>
+                </article>
+            </a>
+        </div>
+    </section>
+    <!--<script src="hw-2.js"></script> -->
+    <!--<script src="hw-3.js"></script> -->
+    <!--<script src="hw-4.js"></script> -->
+    <script src="game_1.js"></script>
+    <script src="hw-5.js"></script>
+</body>
+<footer class="footer">
+    <h3 class="footer__title">Все права защищены.</h3>
+</footer>
+</html>
