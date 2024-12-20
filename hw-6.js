@@ -1,6 +1,6 @@
 const firstSet = [1, 5, 4, 10, 0, 3];
 for (let i = -1; i < firstSet.length; i++) {
-    if (firstSet[i] == 10) break;
+    if (firstSet[i] === 10) break;
     console.log(firstSet[i+1]);
  }
 
@@ -19,13 +19,12 @@ console.log(thirdGoal);
 
 
 const forthSet = [];
-const forthSetbase = [];
-for (let index = 0; index <= 2; index++) {
-    for (let i = 0; i <= 2; i++) {
-    forthSetbase.push(1);
+for (let index = 0; index <= 2; index++){ 
+  const forthSetbase = [];
+  for (let i = 0; i <= 2; i++){
+      forthSetbase.push(1);
   }
   forthSet.push(forthSetbase);
-  forthSetbase.length = 3;
 }
  console.log(forthSet);
 
@@ -33,10 +32,10 @@ for (let index = 0; index <= 2; index++) {
 
 
 let fifthSet = [1, 1, 1];
-for (let i = 0; i <= 2; i++) {
-    fifthSet.push(2);
-  }
+fifthSet.push(2, 2, 2);
 console.log(fifthSet);
+
+
 
 
 const sixthSet = [9, 8, 7, 'a', 6, 5];
@@ -45,10 +44,11 @@ sixthSetSort = sixthSet.pop();
 console.log(sixthSet);
 
 
+
+
 const seventhSet = [9, 8, 7, 6, 5];
 const userAnswer = +prompt("Угадайте число от 1 до 10!");
-let check = seventhSet.includes(userAnswer);
-if (check == true) {
+if (seventhSet.includes(userAnswer) === true) {
     alert('Угадал');
 } else {
     alert('Не угадал');
@@ -58,11 +58,10 @@ if (check == true) {
 
 
 let eigthSet = 'abcdef';
-let eigthSetMass = eigthSet.split('');
-eigthSetMass = eigthSetMass.reverse();
-eigthSetMass = eigthSetMass.join();
-eigthSetMass = eigthSetMass.replaceAll(',', '');
-console.log(eigthSetMass);
+eigthSet = eigthSet.split('');
+eigthSet = eigthSet.reverse();
+eigthSet = eigthSet.join('');
+console.log(eigthSet);
 
 
 
