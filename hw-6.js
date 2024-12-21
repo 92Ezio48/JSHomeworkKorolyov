@@ -48,7 +48,7 @@ console.log(sixthSet);
 
 const seventhSet = [9, 8, 7, 6, 5];
 const userAnswer = +prompt("Угадайте число от 1 до 10!");
-if (seventhSet.includes(userAnswer) === true) {
+if (seventhSet.includes(userAnswer)) {
     alert('Угадал');
 } else {
     alert('Не угадал');
