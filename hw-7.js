@@ -55,3 +55,9 @@ sevenFunction(20, 10);
 let todayDate = new Date();
 let fullDate = "Сегодня: " + todayDate.getDate() + " " + todayDate.getMonth()+1 + " " + todayDate.getFullYear();
 console.log(fullDate);
+
+// 9
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+let goalDate = "Через 73 дня: " + currentDate.getDate() + " " + todayDate.getMonth()+3 + " " + todayDate.getFullYear();
+console.log(goalDate);
