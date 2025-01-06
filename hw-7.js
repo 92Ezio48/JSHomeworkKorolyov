@@ -12,7 +12,7 @@ function secondFunction(array, string){
 });
 return filtered; 
 }
-let result = secondFunction(['Фланец', 'Обечайка', 'Корпус верхний', 'Корпус нижний' ], 'корпус');
+let result = secondFunction(['Фланец', 'Обечайка', 'Корпус верхний', 'Корпус нижний'], 'корпус');
 console.log(result);
 
 // 3
@@ -31,3 +31,11 @@ console.log(Math.max(...fourthArray));
 let fifthNum = Math.floor(Math.random() * (10)) + 1;
 console.log(Math.max(fifthNum));
 
+// 6
+const min = 0;
+let sixNum = prompt('Введите число')
+let sixthArray = [];
+for (let i = 0; i < sixNum/2; i++) {
+    sixthArray.push(Math.floor(Math.random() * (sixNum - min + 1)) + min);
+  }
+  console.log(sixthArray);
