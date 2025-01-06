@@ -27,3 +27,7 @@ let fourthArray = [52, 53, 49, 77, 21, 32];
 console.log(Math.min(...fourthArray));
 console.log(Math.max(...fourthArray));
 
+// 5
+let fifthNum = Math.floor(Math.random() * (10)) + 1;
+console.log(Math.max(fifthNum));
+
