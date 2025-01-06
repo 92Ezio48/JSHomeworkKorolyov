@@ -1,3 +1,5 @@
+
+
 function FourthGame(){
     const quiz = [
         {
@@ -31,4 +33,3 @@ function FourthGame(){
     }
     alert('Вы ответили на ' + n + ' вопросов');
 }
-
