@@ -31,3 +31,4 @@ function FourthGame(){
     }
     alert('Вы ответили на ' + n + ' вопросов');
 }
+
