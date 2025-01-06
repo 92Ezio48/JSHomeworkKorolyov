@@ -61,3 +61,16 @@ let currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
 let goalDate = "Через 73 дня: " + currentDate.getDate() + " " + todayDate.getMonth()+3 + " " + todayDate.getFullYear();
 console.log(goalDate);
+
+// 10
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    let tenthDatebase = new Date();
+function tenthFunction(Date) {
+    let tenthDate = "Дата: " + tenthDatebase.getDate() + " " + months[tenthDatebase.getMonth()] + " " + tenthDatebase.getFullYear();
+    let tenthTime = "Время: " + tenthDatebase.getHours() + " " + tenthDatebase.getMinutes() + " " + tenthDatebase.getSeconds();
+    return tenthDate;
+    return tenthTime;
+}
+let today =  new Date();
+tenthFunction(today);
