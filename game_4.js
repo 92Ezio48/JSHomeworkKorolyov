@@ -1,5 +1,3 @@
-
-
 function FourthGame(){
     const quiz = [
         {
