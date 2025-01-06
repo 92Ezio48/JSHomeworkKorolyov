@@ -16,3 +16,11 @@ let result = secondFunction(['Фланец', 'Обечайка', 'Корпус �
 console.log(result);
 
 // 3
+let thirdNumber = 32.58884;
+console.log(Math.floor(thirdNumber));
+console.log(Math.ceil(thirdNumber));
+console.log(Math.round(thirdNumber));
+
+
+// 4
+
