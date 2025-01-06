@@ -58,10 +58,7 @@ if (seventhSet.includes(userAnswer)) {
 
 
 let eigthSet = 'abcdef';
-eigthSet = eigthSet.split('');
-eigthSet = eigthSet.reverse();
-eigthSet = eigthSet.join('');
-console.log(eigthSet);
+console.log(eigthSet.split('').reverse().join(''))
 
 
 
