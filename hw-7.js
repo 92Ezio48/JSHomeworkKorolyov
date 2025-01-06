@@ -49,3 +49,9 @@ function sevenFunction(number1, number2){
 }
 sevenFunction(10, 20);
 sevenFunction(20, 10);
+
+
+// 8
+let todayDate = new Date();
+let fullDate = "Сегодня: " + todayDate.getDate() + " " + todayDate.getMonth()+1 + " " + todayDate.getFullYear();
+console.log(fullDate);
