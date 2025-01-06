@@ -23,4 +23,7 @@ console.log(Math.round(thirdNumber));
 
 
 // 4
+let fourthArray = [52, 53, 49, 77, 21, 32];
+console.log(Math.min(...fourthArray));
+console.log(Math.max(...fourthArray));
 
