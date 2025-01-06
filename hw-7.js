@@ -39,3 +39,13 @@ for (let i = 0; i < sixNum/2; i++) {
     sixthArray.push(Math.floor(Math.random() * (sixNum - min + 1)) + min);
   }
   console.log(sixthArray);
+
+
+
+// 7
+function sevenFunction(number1, number2){
+    let randomGoal = Math.floor(Math.random() * (number1 - number2 + 1)) + number2;
+   return randomGoal;
+}
+sevenFunction(10, 20);
+sevenFunction(20, 10);
