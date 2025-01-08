@@ -83,4 +83,4 @@ const people = [
     function sayHi (name) {
         console.log(`Привет, ${name}!`);
     }
-    delayForSecond1(() =>  sayHi('Стас'));
+    delayForSecond1(() =>  {sayHi('Стас')});
