@@ -71,3 +71,16 @@ const people = [
     delayForSecond(function () {
        console.log('Привет, Глеб!');
     })
+
+
+    //5
+    function delayForSecond1(cb) {
+        setTimeout(() => {
+            console.log('Прошла одна секунда');
+            if(cb) {  cb(); }
+        }, 1000)
+    }
+    function sayHi (name) {
+        console.log(`Привет, ${name}!`);
+    }
+    delayForSecond1(() =>  sayHi('Стас'));
