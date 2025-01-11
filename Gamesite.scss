@@ -106,6 +106,12 @@ body{
         flex-direction: column;
         gap: 24px;
     }
+    &__container{
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 .items{
     overflow: hidden;
@@ -115,7 +121,7 @@ body{
       grid-template-columns: repeat(12, 1fr);
       &__card{
         box-sizing: border-box;
-        border-radius: 30px;
+        border-radius: 45px;
         background-color: white;
         grid-column: span 4;
         height: 473px;
@@ -131,7 +137,7 @@ body{
       }
       &__card-container{
         box-sizing: border-box;
-        border-radius: 30px;
+        border-radius: 35px;
         background-color: white;
         grid-column: span 4;
         height: 473px;
@@ -158,7 +164,7 @@ body{
       &__description{
         display: flex;
         flex-direction: column;
-        gap: 26px;
+        gap: 16px;
         padding: 32px;
         padding-bottom: 36px;
       }
@@ -245,6 +251,12 @@ body{
         &_reverse{
             flex-direction: row;
         }
+        &_victor{
+            flex-direction: row;
+        }
+        &_reverse-kmn{
+            flex-direction: row-reverse;
+        }
       }
       &__card-container:hover{
         opacity: 1;
@@ -260,6 +272,9 @@ body{
       }
     &__img{
         height: 500px;
+        &_correct{
+            height: 512px;
+        }
     }
     &__description{
         padding-top: 48px;
