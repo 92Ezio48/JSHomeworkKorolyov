@@ -132,7 +132,7 @@ body{
             height: 551px;
         }
         &_5{
-            height: 551px;
+            height: 511px;
         }
       }
       &__card-container{
@@ -148,7 +148,7 @@ body{
             height: 551px;
         }
         &_5{
-            height: 551px;
+            height: 511px;
         }
       }
       &__card-container:hover{
@@ -308,6 +308,15 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    &__title{
+        color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    }
 }
 html {
     scroll-behavior: smooth;
