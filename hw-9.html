@@ -81,5 +81,17 @@
 });  
     </script>
     </div>
+    <div class="Number1">
+        <h1>TASK6</h1>
+        <button class="btn6">Добавить элемент</button>
+    <script>
+        const btn6El = document.querySelector('.btn6')
+        const Div6 = document.createElement('div');
+        document.body.appendChild(Div6);
+        btn6El.addEventListener('click', () => {
+        Div6.textContent = 'Новый элемент';
+        })
+    </script>
+    </div>
 </body>
 </html>
