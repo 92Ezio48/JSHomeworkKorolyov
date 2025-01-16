@@ -11,9 +11,16 @@
         .txt1_none{
             display: block;
         }
+        .Number1{
+            box-sizing: border-box;
+            border-color: black;
+            border: 1px solid;
+        }
     </style>
 </head>
 <body>
+    <div class="Number1">
+        <h1>TASK1</h1>
     <h1 class="txt1 txt1_none">Lorem ipsum dolor sit.</h1>
     <button class="btn1">Скрыть</button>
     <script>
@@ -23,5 +30,18 @@
             txt1El.classList.toggle('txt1_none');
         })
     </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK2</h1>
+    <p class="Secondtxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, illum.</p>
+    <button class="btn2">Изменить цвет</button>
+    <script>
+        const SecondtxtEl= document.querySelector('.Secondtxt')
+        const btn2El = document.querySelector('.btn2')
+        btn2El.addEventListener('click', () => {
+            SecondtxtEl.style.color = 'green';
+        })
+    </script>
+    </div>
 </body>
 </html>
