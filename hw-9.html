@@ -48,12 +48,26 @@
         <h1 class="txt3">Lorem, ipsum dolor.</h1>
     <button class="btn3">Изменить текст</button>
     <script>
-        const txt3El= document.querySelector('.txt3')
+        const txt3El = document.querySelector('.txt3')
         const btn3El = document.querySelector('.btn3')
         btn3El.addEventListener('click', () => {
             txt3El.textContent = 'Привет, мир!';
         })
     </script>
     </div>
+    <div class="Number1">
+        <h1>TASK4</h1>
+        <h1 class="description">Lorem, ipsum dolor.</h1>
+        <h2 class="description">Lorem ipsum dolor sit.</h2>
+        <h3 class="description">Lorem ipsum dolor sit amet.</h3>
+        <h4 class="description">Lorem ipsum dolor sit amet consectetur.</h4>
+    <script>
+        const txt4El = document.querySelectorAll('.description')
+        txt4El.forEach(description => {
+            description.textContent = 'Измененный текст';
+});  
+    </script>
+    </div>
+    
 </body>
 </html>
