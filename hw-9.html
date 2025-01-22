@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt1{
+            display: none;
+        }
+        .txt1_none{
+            display: block;
+        }
+        .Number1{
+            box-sizing: border-box;
+            border-color: black;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="Number1">
+        <h1>TASK1</h1>
+    <h1 class="txt1 txt1_none">Lorem ipsum dolor sit.</h1>
+    <button class="btn1">Скрыть</button>
+    <script>
+        const txt1El= document.querySelector('.txt1')
+        const btn1El = document.querySelector('.btn1')
+        btn1El.addEventListener('click', () => {
+            txt1El.classList.toggle('txt1_none');
+        })
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK2</h1>
+    <p class="Secondtxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, illum.</p>
+    <button class="btn2">Изменить цвет</button>
+    <script>
+        const SecondtxtEl= document.querySelector('.Secondtxt')
+        const btn2El = document.querySelector('.btn2')
+        btn2El.addEventListener('click', () => {
+            SecondtxtEl.style.color = 'green';
+        })
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK3</h1>
+        <h1 class="txt3">Lorem, ipsum dolor.</h1>
+    <button class="btn3">Изменить текст</button>
+    <script>
+        const txt3El = document.querySelector('.txt3')
+        const btn3El = document.querySelector('.btn3')
+        btn3El.addEventListener('click', () => {
+            txt3El.textContent = 'Привет, мир!';
+        })
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK4</h1>
+        <h1 class="description">Lorem, ipsum dolor.</h1>
+        <h2 class="description">Lorem ipsum dolor sit.</h2>
+        <h3 class="description">Lorem ipsum dolor sit amet.</h3>
+        <h4 class="description">Lorem ipsum dolor sit amet consectetur.</h4>
+    <script>
+        const txt4El = document.querySelectorAll('.description')
+        txt4El.forEach(description => {
+            description.textContent = 'Измененный текст';
+});  
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK5</h1>
+        <p class="fifthclass1 description5">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="fifthclass2">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="fifthclass3 description5">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="fifthclass4">Lorem ipsum dolor sit amet consectetur.</p>
+    <script>
+        const txt5El = document.querySelectorAll('.description5')
+        txt5El.forEach(description5 => {
+            description5.textContent = 'Новый текст';
+});  
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK6</h1>
+        <button class="btn6">Добавить элемент</button>
+    <script>
+        const btn6El = document.querySelector('.btn6')
+        const Div6 = document.createElement('div');
+        document.body.appendChild(Div6);
+        btn6El.addEventListener('click', () => {
+        Div6.textContent = 'Новый элемент';
+        })
+    </script>
+    </div>
+    <div class="Number1">
+        <h1>TASK7</h1>
+        <button class="btn7">Удалить элемент</button>
+        <p class="text description7">Lorem ipsum dolor sit.</p>
+        <p class="text ">Lorem ipsum dolor sit amet.</p>
+        <p class="text description7">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="text ">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <script>
+        const btn7El = document.querySelector('.btn7')
+        btn7El.addEventListener('click', () => {
+            const txt7El = document.querySelector('.description7');
+            txt7El.remove();
+        })
+    </script>
+    </div>
+</body>
+</html>
