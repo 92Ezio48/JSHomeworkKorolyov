@@ -11,20 +11,20 @@ function FifthGame(){
         botChoose = game[2];
     }  
     if (userFighter == botChoose) {
-        console.log('ничья'); 
+        alert('Ничья'); 
     } else if (userFighter == game[0] && botChoose == game[1]) {
-        console.log('Ура, победа!'); 
+        alert('Ура, победа!'); 
     } else if (userFighter == game[0] && botChoose == game[2]) {
-        console.log('Бро, тебе надо тренироваться!');
+        alert('Бро, тебе надо тренироваться!');
     } else if (userFighter == game[1] && botChoose == game[0]) {
-        console.log('Бро, тебе надо тренироваться!');
+        alert('Бро, тебе надо тренироваться!');
     } else if (userFighter == game[1] && botChoose == game[2]) {
-        console.log('Ура, победа!');
+        alert('Ура, победа!');
     } else if (userFighter == game[2] && botChoose == game[0]) {
-        console.log('Ура, победа!');
+        alert('Ура, победа!');
     } else if (userFighter == game[2] && botChoose == game[1]) {
-        console.log('Бро, тебе надо тренироваться!');
+        alert('Бро, тебе надо тренироваться!');
     } else {
-        console.log('Введите имя бойца правильно!');
+        alert('Введите имя бойца правильно!');
     }   
 }

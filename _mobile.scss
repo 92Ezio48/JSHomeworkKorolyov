@@ -5,8 +5,8 @@
         height: 700px;
         background-image:  url(./img/header__background2.svg), url(./img/header__background3.svg), url(./img/header__background4.svg), url(./img/header__background5.svg), url(./img/header__background6.svg), url(./img/header__background1.jpeg);
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat ;
-        background-position: top -80px right -37%, top 10% right 75%, top 15% left 12%, top 90% right 25%, top 95% right 10%, top 0% right 30%, top 40% right 20%, top 100% right 7%, top 70% right 12%, top 100% right 50px;
-        background-size: 50%, 6%, 10%, 5%, 10%, auto, cover; 
+        background-position: top -72px right -79px, top 64px right 258px, top 98px left 39px, top 557px right 81px, top 581px right 30px, top 0% right 30%, top 40% right 20%, top 100% right 7%, top 70% right 12%, top 100% right 50px;
+        background-size: 60%, 6%, 9%, 5%, 10%, auto, cover;
         &__description{
             padding-top: 148px;
             padding-bottom: 36px;
@@ -125,12 +125,24 @@ h3{
         line-height: 20px;
         letter-spacing: 0px;
         text-align: left;
+        &_3{
+            width: 99%; 
+        }
+        &_6{
+            width: 92%; 
+        }
       }
     &__description{
         width: 284.93px;
         gap: 16px;
         padding: 29px;
         padding-bottom: 32px;
+        &_6{
+            padding-left: 10px;
+            width: 260px;
+            padding-bottom: 20px;
+            gap: 20px;
+        }
     }
     &__card{
         border-radius: 27px;
@@ -150,6 +162,9 @@ h3{
     &__button{
         margin-top: 16px;
         display: block;
+        &_6{
+            margin-top: 10px;
+        }
       }
     &__items{
         display: block;
@@ -175,6 +190,9 @@ h3{
         &_5{
             height: 528.63px + 39px;
         }
+        &_6{
+            height: 627px;
+        }
     }
     &__title{
         font-size: 32px;
@@ -186,6 +204,13 @@ h3{
     &__title{
         display: block;
         font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
     }
 }
 }
