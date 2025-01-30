@@ -64,13 +64,13 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 .header{
-    padding-left: calc(50% - 600px);
+    padding-left: calc(50% - 593px);
     padding-right: calc(50% - 600px);
     height: 800px;
     background-image:  url(./img/header__background2.svg), url(./img/header__background3.svg), url(./img/header__background4.svg), url(./img/header__background5.svg), url(./img/header__background6.svg), url(./img/header__background7.svg), url(./img/header__background8.svg), url(./img/header__background9.svg), url(./img/header__background10.svg), url(./img/header__background11.svg), url(./img/header__background1.jpeg);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat ;
-    background-position: top -250px right -50%, top 10% right 90%, top 15% left 5%, top 80% right 30%, top 90% right 20%, top 0% right 30%, top 40% right 20%, top 100% right 7%, top 70% right 12%, top 100% right 50px;
-    background-size: 50%, auto, auto, auto, auto, auto, auto, 1.5%, auto, auto, cover; 
+    background-position: top -247px right -397px, top 69px right 1233px, top 93px left 63px, top 537px right 440px, top 567px right 329px, top -11px right 254px, top 254px right 215px, top 663px right 59px, top 467px right 97px, top 378px right -20px;
+    background-size: 55%, auto, auto, auto, auto, auto, auto, 1.5%, auto, auto, cover;
     &__description{
         display: flex;
         flex-direction: column;
@@ -86,12 +86,13 @@ body{
     }
 }
 .about{
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background3.svg), url(./img/about__background4.jpeg);  
-    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
-    background-size: auto, auto, auto, contain;
-    background-position: top 54% right 100%, top 59% right 97%, top 10% right -15%, center;
+    padding-left: calc(50% - 593px);
+    padding-right: calc(50% - 604px);
+    background-color: rgb(32, 32, 39);
+    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background3.svg), ;  
+    background-repeat: no-repeat, no-repeat, no-repeat, ;
+    background-size: auto, auto, auto, ;
+    background-position: top 771px right 1367px, top 825px right 1328px, top 113px right -124px;
     &__text{
         color: rgb(255, 255, 255);
     }
@@ -117,11 +118,11 @@ body{
     overflow: hidden;
       display: grid;
       gap: 32px;
-      padding-bottom: 50px;
+      padding-bottom: 96px;
       grid-template-columns: repeat(12, 1fr);
       &__card{
         box-sizing: border-box;
-        border-radius: 45px;
+        border-radius: 29px;
         background-color: white;
         grid-column: span 4;
         height: 473px;
@@ -164,7 +165,7 @@ body{
       &__description{
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 11px;
         padding: 32px;
         padding-bottom: 36px;
       }
@@ -181,7 +182,7 @@ body{
         height: 36px;
         text-align: center;
         justify-content: center;
-        padding-top: 9px;
+        padding-top: 6px;
       }
       &__instruction{
         display: none;
@@ -194,13 +195,14 @@ body{
     transform: scale(1);
 }
 .mini{
-    height: 3500px;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background1.svg), url(./img/about__background2.svg),  url(./img/about__background4.jpeg); 
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
-    background-size: auto, auto, auto, auto,  contain;
-    background-position: top 2% right 13%, top 3% right 10%,  top 98% right 13%, top 97% right 8%,  center;
+    height: 3454px;
+    padding-left: calc(50% - 593px);
+    padding-right: calc(50% - 604px);
+    background-color: rgb(32, 32, 39);
+    background-image:  url(./img/about__background1.svg), url(./img/about__background2.svg), url(./img/about__background1.svg), url(./img/about__background2.svg),  ; 
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, ;
+    background-size: auto, 5%, 3%, 5%;
+    background-position: top 51px right 113px, top 84px right 33px, top 3368px right 134px, top 3319px right 36px;
     &__text{
         color: rgb(255, 255, 255);
         padding-bottom: 72px;
@@ -226,6 +228,12 @@ body{
         &_reverse{
             flex-direction: row;
         }
+        &_3{
+            height: 500px;
+        }
+        &_2{
+            height: 500px;
+        }
     }
     &__card-container{
         display: flex;
@@ -234,13 +242,13 @@ body{
         justify-content: space-between;
         align-items: flex-start;
         box-sizing: border-box;
-        border-radius: 55px;
+        border-radius: 30px;
         background-color: white;
         grid-column: span 12;
         height: 500px;
         width: 100%;
         &_medium{
-            height: 512px;
+            height: 500px;
         }
         &_big{
             height: 500px;
@@ -273,7 +281,7 @@ body{
     &__img{
         height: 500px;
         &_correct{
-            height: 512px;
+            height: 500px;
         }
     }
     &__description{
@@ -298,6 +306,7 @@ body{
         letter-spacing: 0px;
         text-align: left;
         color: #000;
+        padding-bottom: 8px;
     }
 }
 .footer{
@@ -310,12 +319,13 @@ body{
     align-items: center;
     &__title{
         color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: 0px;
-    text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-left: 17px;
     }
 }
 html {
