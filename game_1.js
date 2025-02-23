@@ -5,13 +5,27 @@ function FirstGame() {
     let userNumber;
     while (userNumber !== goalNumber) {
         userNumber = prompt("Угадайте число от 1 до 100");
-        if (userNumber > goalNumber) {
+        if (userNumber == '' || userNumber == undefined) {
+            break;
+        } 
+        else if (userNumber < 0) {
+            alert('Введите число от 1 до 100!');
+        }
+        else if (userNumber > 101) {
+            alert('Введите число от 1 до 100!');
+        }
+        else if (userNumber > goalNumber) {
             alert('Нужное число меньше');
-        } else if (userNumber < goalNumber) {
+        } 
+        else if (userNumber < goalNumber) {
             alert('Нужное число больше');
-        } else { 
+        } 
+        else if (userNumber = goalNumber) {
             alert('Угадал!');
             break;
         }
+        else { 
+            break;
+        }
     }
-}
+}  
